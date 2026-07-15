@@ -197,7 +197,82 @@ height:42px;
 /* HASTA AQUÍ */
 
 /* Luego sigue */
+.service-plans{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
 
+.service-card{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(0,174,239,.20);
+    border-radius:22px;
+    padding:35px;
+    text-align:center;
+    transition:.35s;
+    position:relative;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    border-color:#00aeef;
+    box-shadow:0 18px 40px rgba(0,174,239,.25);
+}
+
+.featured-service{
+    border:2px solid #00aeef;
+    transform:scale(1.04);
+}
+
+.service-badge{
+    position:absolute;
+    top:-14px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#00aeef;
+    color:white;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.service-icon{
+    font-size:60px;
+    margin-bottom:18px;
+}
+
+.service-price{
+    font-size:42px;
+    color:#00aeef;
+    font-weight:900;
+    margin:22px 0;
+}
+
+.service-features{
+    list-style:none;
+    padding:0;
+    margin:30px 0;
+    text-align:left;
+}
+
+.service-features li{
+    margin:12px 0;
+    color:#d9f6ff;
+}
+
+.service-btn{
+    width:100%;
+}
+
+.service-message{
+    margin-top:45px;
+    text-align:center;
+    font-size:22px;
+    color:#9fe9ff;
+    line-height:1.6;
+}
     footer{
       text-align:center;padding:70px 24px 95px;
       border-top:1px solid rgba(0,174,239,.12);
@@ -616,6 +691,91 @@ Su información financiera está protegida con tecnología de encriptación SSL.
       </div>
     </section>
   </main>
+  <section id="servicios-ia">
+  <h2 class="section-title">¿Prefiere que construyamos su agente de IA?</h2>
+
+  <p class="section-sub">
+    No solo le enseñamos a crear agentes de inteligencia artificial.
+    También podemos desarrollar una solución personalizada para su negocio.
+  </p>
+
+  <div class="service-plans">
+
+    <div class="service-card">
+      <div class="service-icon">🤖</div>
+      <h3>Agente Starter</h3>
+      <p class="service-ideal">Ideal para emprendedores y pequeños negocios</p>
+      <div class="service-price">$500 USD</div>
+
+      <ul class="service-features">
+        <li>✓ Agente de IA personalizado</li>
+        <li>✓ Atención básica al cliente</li>
+        <li>✓ Configuración inicial</li>
+        <li>✓ Entrenamiento con información del negocio</li>
+        <li>✓ Una ronda de ajustes</li>
+      </ul>
+
+      <a class="btn service-btn"
+         href="https://wa.me/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Solicitar información
+      </a>
+    </div>
+
+    <div class="service-card featured-service">
+      <div class="service-badge">MÁS RECOMENDADO</div>
+      <div class="service-icon">🚀</div>
+      <h3>Agente Professional</h3>
+      <p class="service-ideal">Ideal para empresas que quieren automatizar y crecer</p>
+      <div class="service-price">$900 USD</div>
+
+      <ul class="service-features">
+        <li>✓ Todo lo incluido en Starter</li>
+        <li>✓ Atención multilingüe</li>
+        <li>✓ Captura de clientes potenciales</li>
+        <li>✓ Automatizaciones personalizadas</li>
+        <li>✓ Integración con formularios</li>
+        <li>✓ Dos rondas de ajustes</li>
+      </ul>
+
+      <a class="btn service-btn"
+         href="https://wa.me/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Solicitar información
+      </a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🏢</div>
+      <h3>Agente Enterprise</h3>
+      <p class="service-ideal">Ideal para empresas con procesos más avanzados</p>
+      <div class="service-price">$1,500 USD</div>
+
+      <ul class="service-features">
+        <li>✓ Todo lo incluido en Professional</li>
+        <li>✓ Automatizaciones avanzadas</li>
+        <li>✓ Integración con CRM o herramientas del negocio</li>
+        <li>✓ Flujos personalizados</li>
+        <li>✓ Soporte prioritario inicial</li>
+        <li>✓ Tres rondas de ajustes</li>
+      </ul>
+
+      <a class="btn service-btn"
+         href="https://wa.me/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Solicitar información
+      </a>
+    </div>
+
+  </div>
+
+  <div class="service-message">
+    <strong>Mientras usted trabaja o descansa, su agente de IA puede responder clientes, captar oportunidades y automatizar procesos.</strong>
+  </div>
+</section>
   <section id="resultados">
 <h2 class="section-title">Resultados Reales</h2>
 
