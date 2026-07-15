@@ -144,6 +144,60 @@
     .payment{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:28px}
     .paypal{background:#00aeef;color:#fff}
     .stripe{background:#fff;color:#050505}
+    .payment{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.paypal{background:#00aeef;color:#fff}
+.stripe{background:#fff;color:#050505}
+
+/* PEGAR AQUÍ ↓↓↓ */
+
+.payment-professional{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.payment-button{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    min-width:280px;
+    padding:16px 22px;
+    border-radius:14px;
+    text-decoration:none;
+    transition:all .25s ease;
+    box-shadow:0 8px 24px rgba(0,0,0,.25);
+}
+
+.payment-button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 14px 32px rgba(0,174,239,.35);
+}
+
+.payment-logo{
+    width:34px;
+    height:34px;
+}
+
+.payment-button-text{
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+}
+
+.payment-button-text strong{
+    font-size:18px;
+}
+
+.payment-button-text small{
+    font-size:13px;
+    opacity:.85;
+}
+
+/* HASTA AQUÍ */
+
+/* Luego sigue */
+
     footer{
       text-align:center;padding:70px 24px 95px;
       border-top:1px solid rgba(0,174,239,.12);
@@ -518,14 +572,41 @@
 <p class="section-sub">
   
 🔒 Compra Segura · 🌎 Disponible en Todo el Mundo · ⚡ Acceso Instantáneo
-   <div class="payment" style="padding-top:32px;">
-   <a class="btn paypal" href="https://paypal.me/OscarGil108" target="_blank">
-💙 Pagar con PayPal
-</a>
+  <div class="payment payment-professional" style="padding-top:32px;">
 
-<a class="btn stripe" href="https://buy.stripe.com/eVq3cveC24LdangaJAco000" target="_blank">
-💳 Pagar con Tarjeta (Visa • Mastercard • Amex)
-</a>
+  <a class="btn paypal payment-button"
+     href="https://paypal.me/OscarGil108"
+     target="_blank"
+     rel="noopener noreferrer">
+
+    <img
+      src="https://cdn.simpleicons.org/paypal/FFFFFF"
+      alt="PayPal"
+      class="payment-logo">
+
+    <span class="payment-button-text">
+      <strong>Pagar con PayPal</strong>
+      <small>Pago rápido y seguro</small>
+    </span>
+  </a>
+
+  <a class="btn stripe payment-button"
+     href="https://buy.stripe.com/eVq3cveC24LdangaJAco000"
+     target="_blank"
+     rel="noopener noreferrer">
+
+    <img
+      src="https://cdn.simpleicons.org/stripe/635BFF"
+      alt="Stripe"
+      class="payment-logo">
+
+    <span class="payment-button-text">
+      <strong>Pagar con tarjeta</strong>
+      <small>Visa · Mastercard · Amex</small>
+    </span>
+  </a>
+
+</div>
      
 </div>
 <p style="margin-top:18px;font-size:15px;color:#9fdcff;text-align:center;">
