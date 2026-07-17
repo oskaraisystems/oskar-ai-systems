@@ -761,92 +761,378 @@ Su información financiera está protegida con tecnología de encriptación SSL.
       </div>
     </section>
   </main>
-  <section id="servicios-ia">
+  <style>
+  /* ===== SERVICIOS DE AGENTES IA — OSKAR AI SYSTEMS ===== */
 
-    <h2 class="section-title">
-Construimos Agentes de IA Personalizados para su Empresa
-</h2>
+  #servicios-ia {
+    padding: 95px 24px;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(0, 110, 255, 0.13), transparent 42%),
+      #050914;
+    text-align: center;
+  }
 
-<p class="section-sub">
-Automatice tareas, atienda clientes las 24 horas y aumente la productividad de su negocio con inteligencia artificial.
-</p>
+  #servicios-ia .os-services-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-<div class="service-plans">
+  #servicios-ia .os-services-title {
+    max-width: 900px;
+    margin: 0 auto 18px;
+    color: #ffffff;
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.12;
+    text-transform: uppercase;
+  }
 
-<div class="service-plans-grid">
+  #servicios-ia .os-services-title span {
+    color: #35a5ff;
+  }
 
-<div class="service-card">
-      <div class="service-icon">🤖</div>
-      <h3>Agente Starter</h3>
-      <p class="service-ideal">Ideal para emprendedores y pequeños negocios</p>
-      <div class="service-price">$500 USD</div>
+  #servicios-ia .os-services-subtitle {
+    max-width: 790px;
+    margin: 0 auto;
+    color: #aebdd2;
+    font-size: 18px;
+    line-height: 1.7;
+  }
 
-      <ul class="service-features">
-        <li>✓ Agente de IA personalizado</li>
-        <li>✓ Atención básica al cliente</li>
-        <li>✓ Configuración inicial</li>
-        <li>✓ Entrenamiento con información del negocio</li>
-        <li>✓ Una ronda de ajustes</li>
-      </ul>
+  #servicios-ia .os-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
+    margin-top: 58px;
+  }
 
-      <a class="btn service-btn"
-         href="https://wa.me/"
-         target="_blank"
-         rel="noopener noreferrer">
-        Solicitar información
-      </a>
+  #servicios-ia .os-service-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 590px;
+    padding: 40px 29px 30px;
+    overflow: visible;
+    border: 1px solid rgba(53, 165, 255, 0.28);
+    border-radius: 22px;
+    background:
+      linear-gradient(145deg, rgba(15, 28, 52, 0.98), rgba(4, 9, 20, 0.99));
+    box-shadow: 0 16px 42px rgba(0, 0, 0, 0.38);
+    text-align: left;
+    transition:
+      transform 0.3s ease,
+      border-color 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  #servicios-ia .os-service-card:hover {
+    transform: translateY(-10px);
+    border-color: #1683ff;
+    box-shadow:
+      0 24px 55px rgba(0, 0, 0, 0.52),
+      0 0 32px rgba(22, 131, 255, 0.25);
+  }
+
+  #servicios-ia .os-service-card.recommended {
+    border: 2px solid #1683ff;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(22, 131, 255, 0.17), transparent 37%),
+      linear-gradient(145deg, rgba(15, 31, 59, 0.99), rgba(4, 9, 20, 0.99));
+    box-shadow:
+      0 22px 55px rgba(0, 0, 0, 0.48),
+      0 0 38px rgba(22, 131, 255, 0.32);
+  }
+
+  #servicios-ia .os-service-card.recommended:hover {
+    transform: translateY(-13px);
+    box-shadow:
+      0 28px 65px rgba(0, 0, 0, 0.58),
+      0 0 48px rgba(22, 131, 255, 0.46);
+  }
+
+  #servicios-ia .os-service-badge {
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 9px 24px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #006eff, #35a5ff);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1.1px;
+    white-space: nowrap;
+    box-shadow: 0 10px 24px rgba(0, 110, 255, 0.45);
+  }
+
+  #servicios-ia .os-service-icon {
+    margin-bottom: 18px;
+    font-size: 46px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  #servicios-ia .os-service-card h3 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 27px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  #servicios-ia .os-service-ideal {
+    min-height: 48px;
+    margin: 0 0 20px;
+    color: #9db1cc;
+    font-size: 14px;
+    line-height: 1.55;
+    text-align: center;
+  }
+
+  #servicios-ia .os-service-price {
+    margin: 0 0 25px;
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1;
+    text-align: center;
+  }
+
+  #servicios-ia .os-service-price small {
+    display: block;
+    margin-top: 9px;
+    color: #7f94b2;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  #servicios-ia .os-service-features {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #servicios-ia .os-service-features li {
+    position: relative;
+    margin: 0;
+    padding: 12px 0 12px 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.065);
+    color: #dce8f8;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  #servicios-ia .os-service-features li::before {
+    content: "✓";
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    color: #35a5ff;
+    font-weight: 900;
+  }
+
+  #servicios-ia .os-service-button {
+    display: block;
+    width: 100%;
+    margin-top: 28px;
+    padding: 16px 18px;
+    border: 1px solid #1683ff;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #006eff, #168fff);
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+    text-align: center;
+    text-decoration: none;
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      filter 0.25s ease;
+  }
+
+  #servicios-ia .os-service-button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+    box-shadow: 0 12px 28px rgba(22, 131, 255, 0.4);
+  }
+
+  #servicios-ia .os-service-message {
+    max-width: 820px;
+    margin: 52px auto 0;
+    padding: 22px 26px;
+    border: 1px solid rgba(53, 165, 255, 0.2);
+    border-radius: 16px;
+    background: rgba(9, 19, 36, 0.75);
+    color: #c9d8eb;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  #servicios-ia .os-service-message strong {
+    color: #ffffff;
+  }
+
+  @media (max-width: 950px) {
+    #servicios-ia .os-services-grid {
+      grid-template-columns: 1fr;
+      max-width: 580px;
+      margin-right: auto;
+      margin-left: auto;
+      gap: 38px;
+    }
+
+    #servicios-ia .os-service-card {
+      min-height: auto;
+    }
+  }
+
+  @media (max-width: 560px) {
+    #servicios-ia {
+      padding: 75px 16px;
+    }
+
+    #servicios-ia .os-service-card {
+      padding: 38px 22px 25px;
+    }
+
+    #servicios-ia .os-service-price {
+      font-size: 37px;
+    }
+
+    #servicios-ia .os-services-subtitle {
+      font-size: 16px;
+    }
+  }
+</style>
+
+<section id="servicios-ia">
+  <div class="os-services-container">
+
+    <h2 class="os-services-title">
+      Construimos <span>Agentes de IA Personalizados</span> para su Empresa
+    </h2>
+
+    <p class="os-services-subtitle">
+      Automatice tareas, atienda clientes las 24 horas y aumente la
+      productividad de su negocio con soluciones de inteligencia artificial
+      diseñadas según sus necesidades.
+    </p>
+
+    <div class="os-services-grid">
+
+      <!-- PLAN STARTER -->
+      <article class="os-service-card">
+        <div class="os-service-icon">🤖</div>
+
+        <h3>Agente Starter</h3>
+
+        <p class="os-service-ideal">
+          Ideal para emprendedores y pequeños negocios que desean comenzar a automatizar.
+        </p>
+
+        <div class="os-service-price">
+          $500 USD
+          <small>Implementación inicial</small>
+        </div>
+
+        <ul class="os-service-features">
+          <li>Agente de IA personalizado</li>
+          <li>Atención básica al cliente</li>
+          <li>Configuración inicial completa</li>
+          <li>Entrenamiento con información del negocio</li>
+          <li>Una ronda de ajustes</li>
+        </ul>
+
+        <a
+          class="os-service-button"
+          href="https://wa.me/?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20el%20Agente%20Starter%20de%20Oskar%20AI%20Systems."
+          target="_blank"
+          rel="noopener noreferrer">
+          Solicitar información
+        </a>
+      </article>
+
+      <!-- PLAN PROFESSIONAL -->
+      <article class="os-service-card recommended">
+        <div class="os-service-badge">MÁS RECOMENDADO</div>
+
+        <div class="os-service-icon">🚀</div>
+
+        <h3>Agente Professional</h3>
+
+        <p class="os-service-ideal">
+          Ideal para empresas que buscan automatizar procesos, captar clientes y crecer.
+        </p>
+
+        <div class="os-service-price">
+          $900 USD
+          <small>Implementación profesional</small>
+        </div>
+
+        <ul class="os-service-features">
+          <li>Todo lo incluido en Starter</li>
+          <li>Atención multilingüe</li>
+          <li>Captura de clientes potenciales</li>
+          <li>Automatizaciones personalizadas</li>
+          <li>Integración con formularios</li>
+          <li>Dos rondas de ajustes</li>
+        </ul>
+
+        <a
+          class="os-service-button"
+          href="https://wa.me/?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20el%20Agente%20Professional%20de%20Oskar%20AI%20Systems."
+          target="_blank"
+          rel="noopener noreferrer">
+          Solicitar información
+        </a>
+      </article>
+
+      <!-- PLAN ENTERPRISE -->
+      <article class="os-service-card">
+        <div class="os-service-icon">🏢</div>
+
+        <h3>Agente Enterprise</h3>
+
+        <p class="os-service-ideal">
+          Ideal para empresas que necesitan procesos e integraciones más avanzadas.
+        </p>
+
+        <div class="os-service-price">
+          $1,500 USD
+          <small>Implementación avanzada</small>
+        </div>
+
+        <ul class="os-service-features">
+          <li>Todo lo incluido en Professional</li>
+          <li>Automatizaciones avanzadas</li>
+          <li>Integración con CRM o herramientas del negocio</li>
+          <li>Flujos personalizados</li>
+          <li>Soporte prioritario inicial</li>
+          <li>Tres rondas de ajustes</li>
+        </ul>
+
+        <a
+          class="os-service-button"
+          href="https://wa.me/?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20el%20Agente%20Enterprise%20de%20Oskar%20AI%20Systems."
+          target="_blank"
+          rel="noopener noreferrer">
+          Solicitar información
+        </a>
+      </article>
+
     </div>
 
-    <div class="service-card featured-service">
-      <div class="service-badge">MÁS RECOMENDADO</div>
-      <div class="service-icon">🚀</div>
-      <h3>Agente Professional</h3>
-      <p class="service-ideal">Ideal para empresas que quieren automatizar y crecer</p>
-      <div class="service-price">$900 USD</div>
-
-      <ul class="service-features">
-        <li>✓ Todo lo incluido en Starter</li>
-        <li>✓ Atención multilingüe</li>
-        <li>✓ Captura de clientes potenciales</li>
-        <li>✓ Automatizaciones personalizadas</li>
-        <li>✓ Integración con formularios</li>
-        <li>✓ Dos rondas de ajustes</li>
-      </ul>
-
-      <a class="btn service-btn"
-         href="https://wa.me/"
-         target="_blank"
-         rel="noopener noreferrer">
-        Solicitar información
-      </a>
+    <div class="os-service-message">
+      <strong>Mientras usted trabaja o descansa, su agente de IA puede seguir trabajando por su negocio.</strong><br>
+      Responda clientes, capte oportunidades y automatice procesos durante las 24 horas.
     </div>
 
-    <div class="service-card">
-      <div class="service-icon">🏢</div>
-      <h3>Agente Enterprise</h3>
-      <p class="service-ideal">Ideal para empresas con procesos más avanzados</p>
-      <div class="service-price">$1,500 USD</div>
-
-      <ul class="service-features">
-        <li>✓ Todo lo incluido en Professional</li>
-        <li>✓ Automatizaciones avanzadas</li>
-        <li>✓ Integración con CRM o herramientas del negocio</li>
-        <li>✓ Flujos personalizados</li>
-        <li>✓ Soporte prioritario inicial</li>
-        <li>✓ Tres rondas de ajustes</li>
-      </ul>
-
-      <a class="btn service-btn"
-         href="https://wa.me/"
-         target="_blank"
-         rel="noopener noreferrer">
-        Solicitar información
-      </a>
-    </div>
-  </div>
-</div>
-  <div class="service-message">
-    <strong>Mientras usted trabaja o descansa, su agente de IA puede responder clientes, captar oportunidades y automatizar procesos.</strong>
   </div>
 </section>
   <section id="resultados">
